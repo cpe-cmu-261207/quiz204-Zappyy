@@ -28,26 +28,26 @@ for (let i = 0; i < arrlist.length; i++) {
 	myList.insertBefore(list, myList.childNodes[0]);
 
 
-	var doneButton = document.createElement("BUTTON");
-	doneButton.textContent = "Dispaly Calculation";
-	doneButton.className = "calcubutton";
+	var CalButton = document.createElement("BUTTON");
+	CalButton.textContent = "Dispaly Calculation";
+	CaleButton.className = "calcubutton";
 
 
-	var deleteButton = document.createElement("BUTTON");
-	deleteButton.textContent = "Display Authors";
-	deleteButton.className = "authorbutton";
+	var AutButton = document.createElement("BUTTON");
+	AutButton.textContent = "Display Authors";
+	AutButton.className = "authorbutton";
 
-	doneButton.onclick = function (event) {
+	CalButton.onclick = function (event) {
 		onClickDoneButton();
 	};
 
-	deleteButton.onclick = function (event) {
+	AutButton.onclick = function (event) {
 		onClickDeleteButton();
 	};
-	list.appendChild(doneButton);
-	doneButton.style.visibility = "hidden";
-	list.appendChild(deleteButton);
-	deleteButton.style.visibility = "hidden";
+	list.appendChild(CalButton);
+	CalButton.style.visibility = "hidden";
+	list.appendChild(AutButton);
+	AutButton.style.visibility = "hidden";
 	list.onmouseenter = function (event) {
 		var list0 = event.target;
 		var children = list0.childNodes;
