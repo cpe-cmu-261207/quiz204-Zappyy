@@ -77,4 +77,25 @@ input.addEventListener("keyup", function (event) {
 	}
 });
 
+
+for (let i = 0; i < arrlist.length; i++) {
+	var list = document.createElement("Li");
+	var text = document.createTextNode(arrlist[i]);
+	list.appendChild(text);
+
+	var Author = document.getElementById("Author");
+	myList.insertBefore(list, myList.childNodes[0]);
+
+
+	var SearchButton = document.createElement("BUTTON");
+SearchButton.textContent = "Search";
+SearchButton.className = "Sbutton";
+
+  var resetButton = document.createElement("BUTTON");
+  resetButton.textContent = "Reset";
+  resetButton.className = "Rebutton";
+  
+}
+
+
 // more codes for Search and Reset buttons here
