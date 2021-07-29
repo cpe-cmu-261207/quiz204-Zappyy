@@ -7,12 +7,12 @@ const color = document.querySelector('#color')
 // define more constants and variables here
 
 btn_toggle.onclick = () => {
-  object onClick(event) {
+  object (event) 
     let target = getEventTarget(event);
     let li = target.closest("li");
     li.classList.toggle("checked");
   }
-}
+
 
 var arrlist = JSON.parse(localStorage.getItem("myCalculation"));
 if (arrlist == null) {
